@@ -19,16 +19,16 @@ The agent acts as a project co-pilot—tracking tasks, generating reports, manag
 
 ### How to run in your own device:
 1. Download the repository. 
-``shell
+``
 !git clone https://github.com/Mayank2177/Agent-WorkForce.git
 ``
 2. Setup the environment.
-``shell
+``
 pip install -r requirements.txt
 ``
 
 3. Run the application.
-``shell
+``
 adk web agent.py
 ``
 
