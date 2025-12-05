@@ -3,10 +3,10 @@ from google.adk.agents import SequentialAgent, ParallelAgent
 from google.adk.agents import agent_tool
 
 
-# Root agent acting as a Trip Planner coordinator
+# Root agent acting as a Workload coordinator
 root_agent = LlmAgent(
     model='gemini-2.0-flash',
-    name="TripPlanner",
+    name="Workforce",
     instruction=f"""
     Acts as a comprehensive trip planner.
     - Use the FlightAgent to find and book flights
@@ -17,7 +17,7 @@ root_agent = LlmAgent(
     sub_agents=[flight_agent, hotel_agent, sightseeing_agent] # The coordinator manages these sub-agents
 )
 
-
+from Client_onboarding/client.py import 
 # Convert specialized agents into AgentTools
 flight_tool = agent_tool.AgentTool(agent=flight_agent)
 hotel_tool = agent_tool.AgentTool(agent=hotel_agent)
