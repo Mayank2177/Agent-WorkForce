@@ -3,7 +3,7 @@ from google.adk.agents import LlmAgent
 # Hotel Agent: Specializes in hotel booking and information
 hotel_agent = LlmAgent(
     model='gemini-2.0-flash',
-    name="ManagementAgent",
+    name="ProjectAgent",
     description="Project Management agent",
     instruction=f"""
 You are the **Lead Project Manager**. Your primary function is to convert initial client requirements into a formal, structured project plan. You are highly organized, strategic, and focused on delivery.
