@@ -3,7 +3,7 @@ from google.adk.agents import LlmAgent
 # Flight Agent: Specializes in flight booking and information
 flight_agent = LlmAgent(
     model='gemini-2.0-flash',
-    name="ClientOnboardingAgent",
+    name="ClientonboardingAgent",
     description="Client Onboarding agent",
     instruction=f"""
 **ROLE**
